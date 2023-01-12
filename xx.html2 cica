@@ -1,0 +1,31 @@
+<body>
+    <div id="x">cica</div>
+</body>
+<style>
+    #x {
+        background-color: aqua;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 1px 1px 3px black;
+        text-shadow: 1px 1px 4px gray;
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        transition: 1s;
+    }
+</style>
+<script>
+    o = document.getElementById("x")
+    setInterval(()=>{
+        /*
+        var red=Math.random()*256
+        var green=Math.random()*256
+        var blue=Math.random()*256
+        var bgColor="rgb(" + "," + green + "," + blue + ")"*/
+        o.style.top=Math.random()*300+30
+        o.style.left=Math.random()*300+30
+        /*o.style.backgroundColor=bgColor*/
+        o.style.backgroundColor="rgb(" + Math.random()*256 + "," +Math.random()*256 + "," + Math.random()*256 + ")"
+    }, 2000)
+</script>
